@@ -510,22 +510,22 @@ ul li:before {
     position: relative;
     width: 100%; /* 화면 가로 꽉 채움 */
     max-width: 100%; /* 뷰포트 넘지 않게 */
-    height: 100%; /* 원하는 비율 (바꿀 수 있음: 50vh, 70vh 등) */
     margin: auto;
     overflow: hidden;
 }
 
 .slides {
     display: flex;
-    transition: transform 0.5s ease;
-    width: 100%;
-    height: 100%;
+    transition: transform 0.4s ease;
+   
 }
 
 .slides img {
+    flex: 0 0 100%; 
     width: 100%;
     height: auto;
-    object-fit: cover; /* 👉 fill mode (이미지를 꽉 채움) */
+    display: block;
+    object-fit: contain;  /* 👉 fill mode (이미지를 꽉 채움) */
     border-radius: 0;
 }
 
