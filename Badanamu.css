@@ -1,0 +1,582 @@
+/* Universal Styles */
+html {
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: 100px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 400px;
+}
+
+h3 {
+    font-size: 40px;
+    background: linear-gradient(140deg, #43cbff 10.92%, #9708cc 126.64%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.3em;
+}
+
+p {
+    /* intentionally left blank */
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%; /* Adjusted width considering margins */
+    background-color: #ffffff;
+    font-size: 16px;
+    padding: 1em 0; /* Adjusted padding */
+    z-index: 1000; /* 헤더의 z-index를 설정하여 다른 요소보다 위에 표시되도록 합니다 */
+    height: min-content;
+}
+
+.head-inner {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Right-aligned ul */
+.header ul {
+    margin: 0; /* Reset margin */
+    padding: 0 0;
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    justify-content: center;
+
+    list-style-type: none;
+
+    height: min-content;
+}
+/* Left-aligned h1 */
+.header h1 {
+    margin: 0 1em;
+}
+
+/* List items within header */
+.header li {
+    display: flex;
+    padding: 0 1em; /* Adjusted padding */
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header a {
+    color: #828282;
+}
+
+.header a:hover {
+    background-color: transparent;
+    color: #000;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .header {
+        gap: 0;
+        width: 100;
+        height: min-content;
+        display: flex;
+    }
+
+    .head-inner {
+        justify-content: center;
+        flex-wrap: wrap;
+        height: min-content;
+        display: flex;
+        width: 100%;
+    }
+
+    .header li {
+        padding: 5% 12px; /* Reduced padding for smaller screens */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+/* Truncate text with ellipsis */
+.header li a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.social-icon {
+    height: 24;
+}
+
+.home {
+    font-weight: 800;
+}
+
+/* Banner */
+
+.top {
+    height: fit-content;
+    padding: 3em 0 0 0;
+}
+
+.banner {
+    align-content: center;
+    padding: 0;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+/*Grid*/
+
+.introduction {
+    background-color: #fff;
+    padding: 2em 10% 0.5em 10%;
+    justify-content: center;
+    display: flex;
+    align-content: normal;
+}
+
+#logo {
+    width: 40%;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 1200px) {
+    .banner {
+        padding: 15% 0 0 0;
+        width: 110%;
+    }
+
+    .introduction {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 5% 0 5%;
+    }
+
+    #logo {
+        width: 40%;
+    }
+
+    #period {
+        padding: 0 0;
+    }
+
+    .subtitle {
+        font-size: 24px;
+    }
+
+    .subtitle2 {
+        font-size: 24px;
+    }
+}
+
+.process {
+    background-color: #fff;
+    padding: 2em 10% 2em 10%;
+}
+
+.process2 {
+    background-color: #62a0d9;
+    padding: 2em 10% 2em 10%;
+    color: #fff;
+}
+
+.process3 {
+    background-color: #ffa395;
+    padding: 2em 10% 2em 10%;
+    color: #fff;
+}
+
+.process4 {
+    background-color: #eeeeee;
+    padding: 2em 10% 2em 10%;
+    color: #000;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 1200px) {
+    .process {
+        padding: 2em 5% 2em 5%;
+    }
+    .process2 {
+        padding: 2em 5% 2em 5%;
+    }
+    #logo {
+        width: 40%;
+
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+}
+
+.boxcontent {
+    padding: 2em 10% 2em 10%;
+}
+
+.title {
+    margin: 1em 0 1em 0;
+}
+
+.subtitle {
+    margin: 2em 0 2em 0;
+    font-size: 20px;
+}
+
+.subtitle2 {
+    font-size: 20px;
+}
+
+.title-wrapper {
+    margin-bottom: -0.8em;
+}
+
+/*Grid Layout for Container*/
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 5em; /* Gap between image boxes */
+    grid-row-gap: 2em;
+    margin-bottom: 4em;
+    justify-content: center;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 5em; /* Gap between image boxes */
+    grid-row-gap: 2em;
+
+    border-bottom: 1px solid #e0e0e0; /* 얇은 회색 가로선 */
+    padding-bottom: 3em; /* 컨테이너 간격 추가 */
+    margin-bottom: 3em; /* 컨테이너 간격 추가 */
+}
+
+/* slide css*/
+
+.slider {
+    position: relative;
+    width: 100%; /* 화면 가로 꽉 채움 */
+    max-width: 100%; /* 뷰포트 넘지 않게 */
+    height: 100%; /* 원하는 비율 (바꿀 수 있음: 50vh, 70vh 등) */
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+    height: 100%;
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 👉 fill mode (이미지를 꽉 채움) */
+    border-radius: 0;
+}
+
+/* 버튼 */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 15px;
+}
+.next {
+    right: 15px;
+}
+
+/*Image Box Styles*/
+
+.box {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.box img {
+    width: 100%;
+}
+
+.image-container {
+    text-align: center; /* 가운데 정렬 */
+}
+
+.inline-image {
+    display: inline-block; /* 병렬 배치 */
+    vertical-align: top; /* 상단 정렬 */
+    margin: 0 10px; /* 좌우 여백 추가 */
+    width: 40%; /* 너비 조정 */
+}
+
+.inline-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-container {
+    text-align: center; /* 가운데 정렬 */
+}
+
+.text-container2 {
+    text-align: left; /* 가운데 정렬 */
+    margin: 2em 2.8em 0 2.8em;
+}
+
+.inline-text {
+    display: inline-block; /* 병렬 배치 */
+    vertical-align: top; /* 상단 정렬 */
+    margin: 0 1em; /* 좌우 여백 추가 */
+    width: 40%; /* 너비 조정 */
+}
+
+.inline-text h1 {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+/* Unordered List */
+
+ul {
+    list-style-type: none; /* 불렛 제거 */
+    margin-left: 0; /* 왼쪽 여백 */
+    padding-left: 0; /* 내부 패딩 */
+}
+
+ul li {
+    display: flex; /* Flexbox 사용 */
+    align-items: flex-start; /* 수직 상단 정렬 */
+    margin-bottom: 10px; /* 리스트 항목 사이의 간격 */
+}
+
+/*
+ul li:before {
+   content: "-"; /* 불렛을 -로 표시 */ /*
+    margin-right: 10px; /* -와 텍스트 사이의 간격 */ /*
+    align-self: flex-start; /* 불렛을 항상 텍스트의 상단에 위치 */ /*
+} */
+
+#lieng:before {
+    content: "-"; /* 불렛을 -로 표시 */
+    margin-right: 10px; /* -와 텍스트 사이의 간격 */
+    align-self: flex-start; /* 불렛을 항상 텍스트의 상단에 위치 */
+}
+
+#uleng {
+    height: 100%;
+    width: auto;
+    margin-bottom: 2em;
+}
+
+#uleng2 {
+    height: 100%;
+    width: auto;
+    margin-bottom: 2em;
+}
+
+#imagestyle {
+    height: 400px;
+    margin-bottom: 2em;
+}
+
+.tagtext {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* 내부 요소를 수직 중앙 정렬 */
+}
+
+/*Styles for Work Section*/
+
+/*slider*/
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 6em;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* 이미지 비율 유지하며 화면에 맞춤 */
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0);
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.subtitle svg {
+    width: 20px;
+    height: 20px;
+    margin: 0 0.6em; /* 아이콘과 텍스트 사이의 간격 */
+    justify-content: center;
+}
+
+/*Grid Layout for Container*/
+
+.container3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 2em; /* Gap between image boxes */
+    grid-row-gap: 4em;
+    margin: 2em 0;
+}
+
+/*Image Box Styles*/
+.workbox {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.workbox .image {
+    width: 100%;
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.workbox img {
+    width: 100%;
+    border-radius: 8px; /* Optional: rounded corners for images */
+    object-fit: cover; /* Maintain image aspect ratio and fill container */
+}
+
+.image img:hover {
+    opacity: 0.7; /* 이미지가 70% 불투명하게 변합니다. */
+    transition: opacity 0.3s ease; /* 투명도 변화에 애니메이션 효과를 추가합니다. */
+}
+
+/* Password */
+
+.title-wrapper {
+    display: flex;
+    align-items: center; /* 아이콘과 텍스트 수직 정렬 */
+}
+
+.title-wrapper svg {
+    width: 16px;
+    height: 16px;
+    margin-left: 0.2em; /* 아이콘과 텍스트 사이의 간격 */
+}
+
+.title-wrapper h2 a.pagelink {
+    position: relative;
+    text-decoration: none;
+    color: #333; /* 기본 텍스트 색상 */
+    transition: color 0.3s ease; /* 색상 변경 트랜지션 */
+}
+
+#imageClick,
+#imageClick2 .title-wrapper {
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+}
+
+.close-btn {
+    float: right;
+    cursor: pointer;
+}
+
+@keyframes dissolve {
+    0% {
+        opacity: 1; /* 애니메이션이 시작될 때의 투명도 */
+    }
+    100% {
+        opacity: 0; /* 애니메이션이 종료될 때의 투명도 */
+    }
+}
+
+/* footer */
+
+.footer {
+    position: relative;
+    display: flex; /* Flex 컨테이너로 변경 */
+    justify-content: center; /* 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    padding: 2em; /* 간단히 통합 */
+    background-color: #e0e0e0;
+}

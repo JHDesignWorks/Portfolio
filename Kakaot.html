@@ -1,0 +1,778 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>KakaoT</title>
+        <link rel="stylesheet" href="Kakaot.css" />
+        <!-- Font Awesome CDN 추가 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    </head>
+
+    <body onload="window.scrollTo(0, 0);">
+        <!-- Header -->
+        <div class="header">
+            <div class="head-inner">
+                <h1 class="home"><a href="index.html">JIHYE CHOI</a></h1>
+
+                <ul>
+                    <li><a class="pagelink" href="index.html">Work</a></li>
+                    <li><a class="pagelink" href="#index.html">Fun</a></li>
+                    <li><a class="pagelink" href="#indec.html">About</a></li>
+                    <li>
+                        <a class="pagelink" href="mailto:jihyechoi.design@gmail.com" title="Email me :)">Contact</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/jihyechoidesign/" target="_blank" class="social-icon">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                x="0px"
+                                y="0px"
+                                width="40"
+                                height="40"
+                                viewBox="0 0 50 50">
+                                <polygon
+                                    fill="#6189ff"
+                                    points="16,2.483 10.002,5.946 10,5.945 10,33.66 34.001,47.516 40.001,44.052 40,16.34"></polygon>
+                                <polygon fill="#577be6" points="40,16.34 16,2.483 10,5.947 34,19.804"></polygon>
+                                <polygon
+                                    fill="#4460b3"
+                                    points="34,19.804 34.001,47.516 40.001,44.052 40,16.34"></polygon>
+                                <polygon
+                                    fill="#e6e6e6"
+                                    points="15,13.453 14,14.03 14,15.185 15,16.917 16,17.494 17,16.917 17,15.762 16,14.03"></polygon>
+                                <polygon fill="#e6e6e6" points="14,18.649 14,31.351 17,33.083 17,20.381"></polygon>
+                                <polygon
+                                    fill="#e6e6e6"
+                                    points="28,26.732 24,24.423 22,25.577 22,23.268 19,21.536 19,34.238 22,35.97 22,27.887 23,27.309 26,29.041 27,30.773 27,38.856 30,40.588 30,30.196"></polygon>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Banner Section-->
+
+        <div class="top">
+            <div class="banner">
+                <img src="image/home/work/KakaoT/Header%20Image.jpeg" />
+            </div>
+        </div>
+
+        <!-- Introduction -->
+
+        <div class="introduction">
+            <div class="container2" style="margin-bottom: 3em">
+                <div class="box" id="Kakaologo">
+                    <img src="image/home/work/KakaoT/Kakao_T_logo.png" id="logo" />
+                    <h3 class="title" id="maintitle">UX Design for Kakao Bike</h3>
+                    <h1 class="subtitle" style="margin-top: -0.2em">카카오 바이크 UX 디자인 / 2020</h1>
+                    <p class="link" style="margin-top: -0.3em">
+                        <a href="https://www.rnaanalytics.com" style="color: #222222"></a>
+                    </p>
+                </div>
+
+                <div class="box" id="Kakaoinfo" style="width: 100%">
+                    <p class="description" id="en">
+                        Kakao Bike is a PAS-based electric bicycle sharing service provided by Kakao in South Korea.
+                        Based on my experience as a global designer at Mobike, the world’s first shared bicycle company
+                        from China, I explored the shared bicycle industry in Korea. I analyzed and pinpointed numerous
+                        improvement areas in the current Kakao Bike app to suggest a more convenient user experience.
+                    </p>
+                    <br />
+                    <p class="description" id="kr">
+                        카카오 바이크는 카카오에서 제공하는 PAS 방식의 전기 자전거 공유 서비스입니다. 과거에 중국의 공유
+                        자전거 회사에서 글로벌 디자이너로서 근무하면서, 한국의 공유 자전거 산업에 대한 큰 관심을 가지게
+                        되었습니다. 이전의 경험과 개인적인 견해를 바탕으로 카카오 바이크 앱의 개선점을 찾아보고, 새로운
+                        유저 서비스를 제안하는 것을 목표로 하였습니다.
+                    </p>
+
+                    <p id="link">
+                        <a
+                            href="https://www.figma.com/proto/mECEpzEWnR64AZqk71jbR9/Kakao-T-Bike?node-id=2-3&scaling=scale-down"
+                            style="color: #222"
+                            >Check Prototype
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"
+                                style="width: 12px; color: #bdbdbd; margin-left: 0.5em">
+                                <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6V32c0-17.7-14.3-32-32-32H352zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z" /></svg
+                        ></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Process -->
+
+        <div class="process">
+            <!-- 1st line -->
+
+            <div class="title">
+                <h2 class="subtitle">User Flow</h2>
+            </div>
+
+            <div class="container2">
+                <div class="box">
+                    <img src="image/home/work/KakaoT/kakaot%20sketch.jpeg" />
+
+                    <p></p>
+                </div>
+
+                <div class="box">
+                    <p class="en">
+                        By reviewing case studies from world-class mobility brands, such as Uber and Lyft, I sketched
+                        user flows and repeatedly attempted to design an improved prototype. Unnecessary flows were
+                        removed or simplified as much as possible to ensure an easy and simple user interface.
+                        Minimizing the confusion and maximizing the desired function was my goal.
+                    </p>
+
+                    <p class="kr">
+                        세계적인 공유 모빌리티 브랜드인 우버와 Lyft 등의 케이스 스터디를 바탕으로 주요 흐름을 스케치하고
+                        신속한 프로토타이핑을 통해 설계를 반복하였습니다. 불필요한 부분은 제거하거나 최대한 간소화하여,
+                        사용자가 혼란 없이 원하는 기능을 쉽게 찾고 사용할 수 있도록 개선하였습니다.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 2nd line -->
+
+            <div class="title">
+                <h2 class="subtitle">Low Fidelity Wire Frames</h2>
+            </div>
+
+            <div class="container">
+                <div class="box">
+                    <img src="image/home/work/KakaoT/low_useflow1.png" class="imagestyle" />
+
+                    <p class="en">
+                        In refining the mobility app, I prioritized the bicycle service by placing the user profile
+                        prominently on the bike app's main page. This layout ensures easy access to bicycle-specific
+                        features without leaving the bike page.<br /><br />
+
+                        Inspired by Starbucks' gift card system, I introduced a similar payment and management feature
+                        within the Kakao Bike mobile platform. This Kakao Bike Pass offers flexible payment options and
+                        serves as an effective digital marketing tool. Tailored for students and office workers, the
+                        pass provides convenient, monthly or fixed-term payment and management solutions, enhancing user
+                        experience and financial convenience.
+                    </p>
+                </div>
+
+                <div class="box">
+                    <img src="image/home/work/KakaoT/low_useflow2.png" class="imagestyle2" />
+
+                    <p class="kr">
+                        모빌리티 앱을 개선할 때, 자전거 서비스를 우선으로 생각하여 자전거 앱의 메인 홈 페이지에서 사용자
+                        프로필을 중앙에 배치했습니다. 이렇게 함으로써 사용자들이 자전거 전용 기능을 쉽게 찾고 이용할 수
+                        있도록 했습니다.<br /><br />
+
+                        스타벅스의 기프트 카드 시스템에서 영감을 받아 카카오 바이크 모바일 플랫폼 내에서도 비슷한 결제
+                        및 관리 기능을 도입했습니다. 이 카카오 바이크 패스는 유연한 결제 옵션을 제공하며, 디지털 마케팅
+                        도구로도 효과적으로 활용됩니다. 학생과 직장인을 주요 타겟으로 하여 월별이나 정해진 기간 동안의
+                        편리한 결제 및 관리 솔루션을 제공합니다, 이를 통해 사용자 경험과 금전적인 편의성을
+                        향상시켰습니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="process2" style="background">
+            <!-- 3rd line -->
+
+            <div class="boxcontent">
+                <div class="title">
+                    <h2 class="subtitle">Main Home</h2>
+                </div>
+
+                <div class="container">
+                    <div class="box2">
+                        <div class="image-container">
+                            <div class="inline-image pastdesign">
+                                <img src="image/home/work/KakaoT/past1.png" />
+                                <p style="margin-top: -1em">Past Design</p>
+                            </div>
+
+                            <div class="inline-image improveddesign">
+                                <img src="image/home/work/KakaoT/current1.png" />
+                                <p style="margin-top: -1em">Improved Design</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="text-container" style="border-bottom: 0.2px solid #000; margin-bottom: 2em">
+                            <div class="inline-text pastdesign" style="text-align: left">
+                                <h1>Problem</h1>
+
+                                <ul class="uleng">
+                                    <li class="lieng">Inefficient use of phrase on top</li>
+                                    <li class="lieng">Poor visibility of promotion banner and brand news</li>
+                                </ul>
+                            </div>
+
+                            <div class="inline-text pastdesign" style="text-align: left">
+                                <h1>Solution</h1>
+
+                                <ul class="uleng">
+                                    <li class="lieng">Remove the top phrase</li>
+                                    <li class="lieng">Place promotional banner and brand news at the top</li>
+                                    <li class="lieng">Capture user attention with banner illustration</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="text-container">
+                            <div class="inline-text pastdesign" style="text-align: left">
+                                <ul class="ulkr">
+                                    <li class="lieng">상단 문구의 비효율성</li>
+                                    <li class="lieng">보이지 않는 서비스 홍보 배너 및 뉴스</li>
+                                </ul>
+                            </div>
+
+                            <div class="inline-text pastdesign" style="text-align: left">
+                                <ul class="ulkr">
+                                    <li class="lieng">상단 문구 제거</li>
+                                    <li class="lieng">홍보배너, 브랜드 뉴스를 상단에 위치 시킴</li>
+                                    <li class="lieng">
+                                        배너의 일러스트와 애니메이션 효과로<br />
+                                        사용자의 시선을 끔
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="text-container2">
+                            <p>
+                                When users interact with the app, they typically don't read sequentially from the top
+                                but rather scan through it quickly. Most users are likely to overlook the greeting
+                                located at the top of the main homepage. Recognizing this, we strategically positioned
+                                image-based promotional banners at the top to capture users' attention more effectively.
+                                By doing so, we aimed to enhance the efficiency of information retrieval and overall
+                                user experience within the app. <br /><br />
+                                사용자는 앱을 사용할 때 일반적으로 위에서부터 차례로 읽지 않고 빠르게 훑어보는 경향이
+                                있습니다. 특히 메인 홈페이지 상단에 위치한 인사말은 대부분의 사용자에게 불필요하게
+                                느껴질 가능성이 높습니다. 이러한 문제를 인식하고, 사용자들이 빠르게 필요한 정보를 찾을
+                                수 있도록 이미지 기반의 홍보 배너를 상단에 위치시켜, 눈길을 끌 수 있는 방향으로
+                                변경하였습니다. 이렇게 함으로써 사용자의 효율적인 정보 탐색을 돕고, 앱의 전반적인 사용자
+                                경험을 향상시키려는 노력을 기울였습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="process1" id="background">
+            <!-- 4th line -->
+
+            <div class="boxcontent">
+                <div class="title">
+                    <h2 class="subtitle">Health Safety Commitment</h2>
+                </div>
+
+                <div class="container">
+                    <div class="box2">
+                        <div class="image-container">
+                            <div class="inline-image improveddesign" style="height: 110%">
+                                <img src="image/home/work/KakaoT/covidannoucemen_crop2.gif" />
+                                <p>New Feature</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="text-container" style="border-bottom: 0.2px solid #000; margin-bottom: 2em">
+                            <div class="inline-text pastdesign" style="text-align: left">
+                                <h1>Problem</h1>
+
+                                <ul class="uleng">
+                                    <li class="lieng">Absence of COVID-19 related news</li>
+                                </ul>
+                            </div>
+
+                            <div class="inline-text pastdesign" style="text-align: left">
+                                <h1>Solution</h1>
+
+                                <ul class="uleng">
+                                    <li class="lieng">Notify users of COVID-19 updates before using the bike</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="text-container">
+                            <div class="inline-text pastdesign" style="text-align: left">
+                                <ul class="ulkr">
+                                    <li class="lieng">코로나 안내와 건강지침이 눈에 띄지 않음</li>
+                                </ul>
+                            </div>
+
+                            <div class="inline-text pastdesign" style="text-align: left">
+                                <ul class="ulkr">
+                                    <li class="lieng">
+                                        건강 지침에 동의하지 않았던 사용자들에게 코로나에 대한 사항을 바이크 사용 전에
+                                        공지 및 안내함
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="text-container2">
+                            <p>
+                                Due to the increased sensitivity of users to the sharing economy amid the COVID-19
+                                pandemic, several global companies are providing guidance focused on health measures.
+                                Reflecting this global trend, I believed that Kakao Bike should actively participate in
+                                providing such guidance. By disseminating health guidelines, i aimed to enhance our
+                                brand's image and trustworthiness. To achieve this, i introduced a pop-up notification
+                                within the app, targeting users who are either new to our service or have not previously
+                                received such notifications. <br /><br />
+                                코로나19로 인해 사용자들이 공유경제에 대해 더욱 민감해지고 있는 상황에서, 여러 글로벌
+                                기업들이 건강 지침을 중심으로 안내를 진행하고 있습니다. 이러한 글로벌 트렌드를 반영하여
+                                카카오 바이크도 적극적으로 안내 활동에 참여해야 한다고 판단하였습니다. 이를 통해 건강
+                                지침을 알리고, 브랜드의 이미지와 신뢰도를 높이기 위해, 처음 이용하거나 이전에 안내를
+                                받지 않은 사용자들을 대상으로 앱 내 팝업을 통한 추가적인 안내를 실시하였습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="process2" id="background1">
+            <!-- 5th line -->
+
+            <div class="boxcontent">
+                <div class="title">
+                    <h2 class="subtitle">Non service area</h2>
+                </div>
+
+                <div class="container">
+                    <div class="box2">
+                        <div class="image-container">
+                            <div class="inline-image pastdesign">
+                                <img src="image/home/work/KakaoT/nonservice_past_m.png" />
+                                <p style="margin-top: -1em">Past Design</p>
+                            </div>
+
+                            <div class="inline-image improveddesign">
+                                <img src="image/home/work/KakaoT/nonservice_current_m.png" />
+                                <p style="margin-top: -1em">Improved Design</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="text-container" style="border-bottom: 0.2px solid #000; margin-bottom: 2em">
+                            <div class="inline-text pastdesign" style="text-align: left">
+                                <h1>Problem</h1>
+
+                                <ul class="uleng">
+                                    <li class="lieng">The non-service area is not clearly marked</li>
+                                    <li class="lieng">
+                                        Color contrast is not strong enough to clearly indicate an inactive and active
+                                        area.
+                                    </li>
+                                    <li class="lieng">Unclear visual hierarchy causes user confusion.</li>
+                                </ul>
+                            </div>
+
+                            <div class="inline-text pastdesign" style="text-align: left">
+                                <h1>Solution</h1>
+
+                                <ul class="uleng">
+                                    <li class="lieng">
+                                        Display a message clearly stating that it is a non-service area when users open
+                                        the app in an inactive location
+                                    </li>
+                                    <li class="lieng">
+                                        Emphasize inactive areas with stronger tonal contrast. Yellow, the brand color,
+                                        was used for CTA to induce user surveys
+                                    </li>
+                                    <li class="lieng">
+                                        Distinguish visual hierarchies by using different letter size and color
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="text-container">
+                            <div class="inline-text pastdesign" style="text-align: left">
+                                <ul class="ulkr">
+                                    <li class="lieng">비서비스 지역이라는 메세지가 직관적으로 전달되지 않음</li>
+                                    <li class="lieng">
+                                        전체적으로 색의 대조가 크지않아 비활성과 활성의 표시가 전달이 안됨
+                                    </li>
+                                    <li class="lieng">시각적 계층 구조가 분명하지 않아 사용자에게 혼란 가중</li>
+                                </ul>
+                            </div>
+
+                            <div class="inline-text pastdesign" style="text-align: left">
+                                <ul class="ulkr">
+                                    <li class="lieng">
+                                        사용자가 서비스 비활성 지역에서 앱을 열었을때, 관련 메세지가 직관적으로 보이도록
+                                        전체적으로 메세지의 크기를 확대
+                                    </li>
+                                    <li class="lieng">
+                                        강렬한 색조 대비를 활용하여 비활성 지역을 강조함. 브랜드 컬러인 옐로우를 CTA에
+                                        사용하여 유저의 설문을 유도
+                                    </li>
+                                    <li class="lieng">글자 크기와 색상으로 시각적 계층 구조를 명확히 강조</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="text-container2">
+                            <p>
+                                The message regarding non-service areas was not clear, making it difficult for users to
+                                determine if they were in a serviceable region. To address this, we added a
+                                straightforward notification in non-service areas to help users easily understand and
+                                verify their location. <br /><br />
+                                비서비스 지역에 대한 메시지가 명확하지 않아 사용자가 정확한 서비스 지역을 판단하기
+                                어려웠습니다. 이를 해결하기 위해, 사용자가 쉽게 이해하고 확인할 수 있는 직관적인 안내
+                                메시지를 비서비스 지역에 추가하였습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="process1" id="background2">
+            <!-- 6th line -->
+
+            <div class="boxcontent">
+                <div class="title">
+                    <h2 class="subtitle">Bike Home</h2>
+                </div>
+
+                <div class="container">
+                    <div class="box2">
+                        <div class="image-container">
+                            <div class="inline-image pastdesign">
+                                <img src="image/home/work/KakaoT/bike%20home_past.png" />
+                                <p style="margin-top: -1em">Past Design</p>
+                            </div>
+
+                            <div class="inline-image improveddesign">
+                                <img src="image/home/work/KakaoT/bike%20home_current.png" />
+                                <p style="margin-top: -1em">Improved Design</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="text-container" style="border-bottom: 0.2px solid #000; margin-bottom: 2em">
+                            <div class="inline-text pastdesign" style="text-align: left">
+                                <h1>Problem</h1>
+
+                                <ul class="uleng">
+                                    <li class="lieng">Too detailed icons</li>
+                                    <li class="lieng">Unclear CTA guide</li>
+                                    <li class="lieng">Insufficient space between the banner and the CTA</li>
+                                    <li class="lieng">Poor visibility of additional function icons</li>
+                                    <li class="lieng">Unclear visual hierarchy due to similar character size</li>
+                                </ul>
+                            </div>
+
+                            <div class="inline-text pastdesign" style="text-align: left">
+                                <h1>Solution</h1>
+
+                                <ul class="uleng">
+                                    <li class="lieng">Simplify icons</li>
+                                    <li class="lieng">Simplify CTA design to drive user behavior</li>
+                                    <li class="lieng">
+                                        Provide space on both sides of the banner and CTA to give users an open feeling
+                                    </li>
+                                    <li class="lieng">Highlight additional function icons with color</li>
+
+                                    <li class="lieng">Emphasize visual hierarchy</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="text-container">
+                            <div class="inline-text pastdesign" style="text-align: left">
+                                <ul class="ulkr">
+                                    <li class="lieng">디테일이 많은 아이콘</li>
+                                    <li class="lieng">명확한 CTA 가이드 필요</li>
+                                    <li class="lieng">배너와 CTA 양옆 사이사이에 간격 없음</li>
+                                    <li class="lieng">부가적인 기능 아이콘이 잘 안보임</li>
+                                    <li class="lieng">비슷한 글자 크기로 인해 시각적 계층구조가 명료하지 않음</li>
+                                </ul>
+                            </div>
+
+                            <div class="inline-text pastdesign" style="text-align: left">
+                                <ul class="ulkr">
+                                    <li class="lieng">아이콘 간소화</li>
+                                    <li class="lieng">CTA 디자인을 간소화하여 유저 행동을 이끌어냄</li>
+                                    <li class="lieng">배너와 CTA 양옆에 간격을 주어 탁 트인 느낌을 유저에게 줌</li>
+                                    <li class="lieng">부가적인 기능 아이콘에 컬러를 주어 강조</li>
+
+                                    <li class="lieng">시각적 계층구조를 강조</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="text-container2">
+                            <p>
+                                The redesigned layout optimizes icon details for clearer user recognition and positions
+                                banners and CTAs centrally to enhance accessibility. To minimize confusion over tap
+                                locations, the size and placement of the CTA have been adjusted to promote more
+                                intuitive use. Additionally, ensuring consistency in text sizes clarifies the visual
+                                hierarchy for improved usability. <br /><br />
+                                개선된 디자인은 아이콘의 디테일을 최적화하여 사용자에게 더 명확한 인식을 제공하고,
+                                배너와 CTA를 중앙에 배치하여 접근성을 향상시켰습니다. 탭할 위치의 혼란을 줄이기 위해
+                                CTA의 크기와 위치를 조정하여 더 직관적인 사용을 도모하였습니다. 또한, 글자 크기의
+                                일관성을 확보하여 시각적 계층 구조를 명료하게 하였습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="process1" id="background3">
+            <!-- 7th line -->
+
+            <div class="boxcontent">
+                <div class="title">
+                    <h2 class="subtitle">My Wallet/Pass Feature</h2>
+                </div>
+
+                <div class="container">
+                    <div class="box2">
+                        <div class="image-container">
+                            <div class="inline-image improveddesign" style="height: 110%">
+                                <img src="image/home/work/KakaoT/pass-ezgif.com-cut.gif" />
+                                <p>New Feature</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="text-container" style="border-bottom: 0.2px solid #000; margin-bottom: 2em">
+                            <div class="inline-text pastdesign" style="text-align: left">
+                                <h1>Problem</h1>
+
+                                <ul class="uleng">
+                                    <li class="lieng">Difficulty in managing the expense in a longer-term</li>
+                                    <li class="lieng">Lack of user-friendly mobile experience</li>
+                                </ul>
+                            </div>
+
+                            <div class="inline-text pastdesign" style="text-align: left">
+                                <h1>Solution</h1>
+
+                                <ul class="uleng">
+                                    <li class="lieng">
+                                        Provide a wide range of passes, giving users more options and the convenience of
+                                        managing their budget.
+                                    </li>
+                                    <li class="lieng">Provide a personal experience through gift cards.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="text-container">
+                            <div class="inline-text pastdesign" style="text-align: left">
+                                <ul class="ulkr">
+                                    <li class="lieng">장기 사용시 예산 관리의 어려움</li>
+                                    <li class="lieng">사용자 친화적 모바일 경험 부족</li>
+                                </ul>
+                            </div>
+
+                            <div class="inline-text pastdesign" style="text-align: left">
+                                <ul class="ulkr">
+                                    <li class="lieng">
+                                        다양한 예산의 패스 제공으로 사용자에게 더 많은 금전적 선택권을 제공 및 선결제를
+                                        통해 사용자가 예산을 더 잘 관리할 수 있도록 편리성을 제공.
+                                    </li>
+                                    <li class="lieng">기프트 카드로 통해 개인적인 경험 제공한다.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="text-container2">
+                            <p>
+                                I added a wallet feature to the bike mobile app, allowing users to easily manage
+                                payments. Through various pass options, users can choose products that fit their budget
+                                and even gift gift cards to family or friends, enhancing their personal experience.
+                                Registered cards can be automatically renewed for user convenience, providing an
+                                effortless payment experience. <br /><br />
+                                바이크 모바일 앱 내에 지갑 기능을 추가하여 사용자가 결제를 간편하게 관리할 수 있게
+                                했습니다. 다양한 패스 옵션을 통해 예산에 맞는 상품을 선택할 수 있고, 가족이나 친구에게
+                                기프트 카드를 선물함으로써 개인적인 경험을 늘릴 수 있습니다. 등록한 카드는 사용자의
+                                편의에 따라 자동으로 갱신되며, 사용자는 편리한 결제 방법을 경험할 수 있습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        =
+
+        <!-- slider -->
+
+        <div class="process" id="background4">
+            <div class="slider-container">
+                <button class="prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+                <div class="slider">
+                    <img class="slide" src="image/home/work/KakaoT/kakaomockup.png" />
+
+                    <!-- 추가로 슬라이드할 이미지들 -->
+
+                    <button class="next-btn" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Other works -->
+
+        <div class="process">
+            <div class="title">
+                <h2 class="subtitle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M234.7 42.7L197 56.8c-3 1.1-5 4-5 7.2s2 6.1 5 7.2l37.7 14.1L248.8 123c1.1 3 4 5 7.2 5s6.1-2 7.2-5l14.1-37.7L315 71.2c3-1.1 5-4 5-7.2s-2-6.1-5-7.2L277.3 42.7 263.2 5c-1.1-3-4-5-7.2-5s-6.1 2-7.2 5L234.7 42.7zM46.1 395.4c-18.7 18.7-18.7 49.1 0 67.9l34.6 34.6c18.7 18.7 49.1 18.7 67.9 0L529.9 116.5c18.7-18.7 18.7-49.1 0-67.9L495.3 14.1c-18.7-18.7-49.1-18.7-67.9 0L46.1 395.4zM484.6 82.6l-105 105-23.3-23.3 105-105 23.3 23.3zM7.5 117.2C3 118.9 0 123.2 0 128s3 9.1 7.5 10.8L64 160l21.2 56.5c1.7 4.5 6 7.5 10.8 7.5s9.1-3 10.8-7.5L128 160l56.5-21.2c4.5-1.7 7.5-6 7.5-10.8s-3-9.1-7.5-10.8L128 96 106.8 39.5C105.1 35 100.8 32 96 32s-9.1 3-10.8 7.5L64 96 7.5 117.2zm352 256c-4.5 1.7-7.5 6-7.5 10.8s3 9.1 7.5 10.8L416 416l21.2 56.5c1.7 4.5 6 7.5 10.8 7.5s9.1-3 10.8-7.5L480 416l56.5-21.2c4.5-1.7 7.5-6 7.5-10.8s-3-9.1-7.5-10.8L480 352l-21.2-56.5c-1.7-4.5-6-7.5-10.8-7.5s-9.1 3-10.8 7.5L416 352l-56.5 21.2z" /></svg
+                    >Discover More
+                </h2>
+            </div>
+
+            <div class="container3">
+                <div class="workbox" id="box1" title="Click to check!">
+                    <!-- password-->
+
+                    <div class="image">
+                        <img
+                            src="image/home/work/RNA_WM_Blue.jpg"
+                            alt=""
+                            id="imageClick"
+                            onclick="showPasswordModal()" />
+                    </div>
+
+                    <div class="text">
+                        <div class="title-wrapper" id="imageClick2" onclick="showPasswordModal()">
+                            <h2 class="subtitle2">
+                                <a class="pagelink"
+                                    >R3S Workflow Manager
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                        <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                        <path
+                                            d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z" /></svg
+                                ></a>
+                            </h2>
+                        </div>
+                        <h1>UI/UX, Branding</h1>
+                        <p>Cloud-based B2B Insurance Underwriting Consulting Product.</p>
+                    </div>
+                </div>
+
+                <div class="workbox" id="box3" title="Click to check!">
+                    <div class="image">
+                        <a href="RNA.html"> <img src="image/home/work/RNA2.jpg" alt="visual" /></a>
+                    </div>
+                    <div class="text">
+                        <div class="title-wrapper">
+                            <h2 class="subtitle2">Visual Design at RNA Analytics</h2>
+                        </div>
+                        <h1>Marketing Design</h1>
+                        <p>Managed marketing visual design for RNA Analysis, an insurance B2B service.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer section-->
+
+        <div class="footer">
+            <div class="footercontent">
+                <p id="footer">Made by &copy; Jihye Choi 2025</p>
+            </div>
+        </div>
+        <!-- footer end-->
+
+        <!--slide-->
+
+        <script>
+            let slideIndex = 0;
+
+            function moveSlide(n) {
+                const slides = document.querySelectorAll(".slide");
+                const slider = document.querySelector(".slider");
+                if (slideIndex === 0 && n === -1) {
+                    slideIndex = slides.length - 1;
+                } else if (slideIndex === slides.length - 1 && n === 1) {
+                    slideIndex = 0;
+                } else {
+                    slideIndex += n;
+                }
+                slider.style.transform = `translateX(-${slideIndex * 100}%)`;
+            }
+
+            // 자동 슬라이드
+            setInterval(() => {
+                moveSlide2(1);
+            }, intervalTime);
+        </script>
+
+        <!-- 패스워드 입력 폼 -->
+        <div id="passwordModal" class="modal" style="display: none">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <input type="password" id="passwordInput" placeholder="Enter Password" />
+                <button onclick="validatePassword()">Submit</button>
+            </div>
+        </div>
+
+        <script>
+            (function () {
+                "use strict"; // 엄격 모드 활성화
+
+                window.showPasswordModal = function () {
+                    let modal = document.getElementById("passwordModal");
+                    modal.style.display = "block";
+                };
+
+                window.closeModal = function () {
+                    let modal = document.getElementById("passwordModal");
+                    modal.style.display = "none";
+                };
+
+                function validatePassword() {
+                    let password = document.getElementById("passwordInput").value;
+                    // 여기에 비밀번호를 설정합니다.
+                    let correctPassword = "4202";
+
+                    if (password === correctPassword) {
+                        window.location.href = "WM.html";
+                        return true;
+                    } else {
+                        alert("Incorrect password. Please try again.");
+                        return false;
+                    }
+                }
+            })();
+
+            function validatePassword() {
+                let password = document.getElementById("passwordInput").value;
+                // 여기에 비밀번호를 설정합니다.
+                let correctPassword = "5202";
+
+                if (password === correctPassword) {
+                    console.log("Correct password. Redirecting to WM.html...");
+                    window.location.href = "WM.html";
+                    return true;
+                } else {
+                    console.log("Incorrect password entered.");
+                    alert("Incorrect password. Please try again.");
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>

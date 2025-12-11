@@ -1,0 +1,363 @@
+/* Universal Styles */
+html {
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: 100px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 400px;
+}
+
+h3 {
+    font-size: 40px;
+    background: linear-gradient(140deg, #43cbff 10.92%, #9708cc 126.64%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.3em;
+}
+
+p {
+    /* intentionally left blank */
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%; /* Adjusted width considering margins */
+    background-color: #ffffff;
+    font-size: 16px;
+    padding: 1em 0; /* Adjusted padding */
+    z-index: 1000; /* 헤더의 z-index를 설정하여 다른 요소보다 위에 표시되도록 합니다 */
+    height: min-content;
+}
+
+.head-inner {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Right-aligned ul */
+.header ul {
+    margin: 0; /* Reset margin */
+    padding: 0 0;
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    justify-content: center;
+
+    list-style-type: none;
+
+    height: min-content;
+}
+/* Left-aligned h1 */
+.header h1 {
+    margin: 0 1em;
+}
+
+/* List items within header */
+.header li {
+    display: flex;
+    padding: 0 1em; /* Adjusted padding */
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header a {
+    color: #828282;
+}
+
+.header a:hover {
+    background-color: transparent;
+    color: #000;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .header {
+        gap: 0;
+        width: 100;
+        height: min-content;
+        display: flex;
+    }
+
+    .head-inner {
+        justify-content: center;
+        flex-wrap: wrap;
+        height: min-content;
+        display: flex;
+        width: 100%;
+    }
+
+    .header li {
+        padding: 5% 12px; /* Reduced padding for smaller screens */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+/* Truncate text with ellipsis */
+.header li a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.social-icon {
+    height: 24;
+}
+
+.home {
+    font-weight: 800;
+}
+
+/* Banner */
+
+.top {
+    height: fit-content;
+    padding: 0 0 0 0;
+}
+
+.banner {
+    align-content: center;
+    padding: 5% 0;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+/*Styles for Work Section*/
+
+/*slider*/
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 6em;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* 이미지 비율 유지하며 화면에 맞춤 */
+}
+
+.slider-container2 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 8em;
+}
+
+.slider2 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide2 {
+    width: 200px; /* 이미지 너비 */
+    height: auto;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0);
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+/*Grid*/
+
+.introduction {
+    background-color: #fff;
+    padding: 2em 10% 0.5em 10%;
+}
+
+#logo {
+    width: 40%;
+    padding: 0 0 3em 0;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 1200px) {
+    .banner {
+        padding: 15% 0 1em 0;
+        width: 120%;
+    }
+
+    .introduction {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 5% 0 5%;
+    }
+
+    #logo {
+        width: 50%;
+    }
+
+    #period {
+        padding: 0 0;
+    }
+
+    [id^="subtitle"] h2 {
+        font-size: 20px;
+    }
+}
+
+.process {
+    background-color: #fff;
+    padding: 2em 10% 2em 10%;
+}
+
+.title {
+    margin: 1em 0 1em 0;
+}
+
+.subtitle {
+    margin: 2em 0 2em 0;
+    font-size: 20px;
+}
+
+.subtitle2 {
+    font-size: 20px;
+}
+
+/*Grid Layout for Container*/
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 5em; /* Gap between image boxes */
+    grid-row-gap: 2em;
+    margin-bottom: 12em;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 5em; /* Gap between image boxes */
+    grid-row-gap: 2em;
+
+    border-bottom: 1px solid #e0e0e0; /* 얇은 회색 가로선 */
+    padding-bottom: 3em; /* 컨테이너 간격 추가 */
+    margin-bottom: 3em; /* 컨테이너 간격 추가 */
+}
+
+/*Image Box Styles*/
+
+.box {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.box img {
+    width: 100%;
+}
+
+.tagtext {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* 내부 요소를 수직 중앙 정렬 */
+}
+
+/* Discover more*/
+
+.subtitle svg {
+    width: 20px;
+    height: 20px;
+    margin: 0 0.6em; /* 아이콘과 텍스트 사이의 간격 */
+    justify-content: center;
+}
+
+.container3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 2em; /* Gap between image boxes */
+    grid-row-gap: 4em;
+    margin: 2em 0;
+}
+
+/*Image Box Styles*/
+.workbox {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.workbox .image {
+    width: 100%;
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.workbox img {
+    width: 100%;
+    border-radius: 8px; /* Optional: rounded corners for images */
+    object-fit: cover; /* Maintain image aspect ratio and fill container */
+}
+
+.image img:hover {
+    opacity: 0.7; /* 이미지가 70% 불투명하게 변합니다. */
+    transition: opacity 0.3s ease; /* 투명도 변화에 애니메이션 효과를 추가합니다. */
+}
+
+/* footer */
+
+.footer {
+    position: relative;
+    display: flex; /* Flex 컨테이너로 변경 */
+    justify-content: center; /* 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    padding: 2em; /* 간단히 통합 */
+    background-color: #e0e0e0;
+}

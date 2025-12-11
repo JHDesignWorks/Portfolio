@@ -1,0 +1,761 @@
+/* Universal Styles */
+html {
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: 100px;
+    
+    
+    
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 400px;
+}
+
+h3 {
+    font-size: 40px;
+    background: linear-gradient(140deg, #43cbff 10.92%, #9708cc 126.64%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.3em;
+}
+
+p {
+    /* intentionally left blank */
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%; /* Adjusted width considering margins */
+    background-color: #ffffff;
+    font-size: 16px;
+    padding: 1em 0; /* Adjusted padding */
+    z-index: 1000; /* 헤더의 z-index를 설정하여 다른 요소보다 위에 표시되도록 합니다 */
+    height: min-content;
+}
+
+.head-inner {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Right-aligned ul */
+.header ul {
+    margin: 0; /* Reset margin */
+    padding: 0 0;
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    justify-content: center;
+
+    list-style-type: none;
+
+    height: min-content;
+}
+/* Left-aligned h1 */
+.header h1 {
+    margin: 0 1em;
+}
+
+/* List items within header */
+.header li {
+    display: flex;
+    padding: 0 1em; /* Adjusted padding */
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header a {
+    color: #828282;
+}
+
+.header a:hover {
+    background-color: transparent;
+    color: #000;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .header {
+        gap: 0;
+        width: 100;
+        height: min-content;
+        display: flex;
+    }
+
+    .head-inner {
+        justify-content: center;
+        flex-wrap: wrap;
+        height: min-content;
+        display: flex;
+        width: 100%;
+    }
+
+    .header li {
+        padding: 5% 12px; /* Reduced padding for smaller screens */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+/* Truncate text with ellipsis */
+.header li a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.social-icon {
+    height: 24;
+}
+
+.home {
+    font-weight: 800;
+}
+
+/* Banner */
+
+.top {
+    height: fit-content;
+    padding: 0 0 2em 0;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    column-gap: 1em;
+    padding: 7em 10% 0 10%;
+    align-items: center;
+}
+
+/* 미디어 쿼리 추가 */
+@media screen and (max-width: 800px) {
+    /* 예시로 768px을 기준으로 설정했습니다. 필요에 따라 조절하세요. */
+
+    .banner {
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 15% 5%;
+        justify-content: center;
+        gap: 2em;
+    }
+}
+
+.banner #bannertext h3 {
+    font-size: 40px; /* 원하는 작은 크기로 조절하세요 */
+    text-align: left; /* 텍스트 중앙 정렬 추가 */
+    margin-bottom: 0; /* 하단 마진 추가 */
+    width: 100%;
+}
+
+.banner #bannercontent {
+    width: 100%;
+    align-items: center;
+    margin: 1em;
+}
+
+.buttons {
+    margin: 1em 0;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#bannertext {
+    padding-top: 0;
+    padding-left: 0;
+    height: fit-content;
+}
+
+#bannertext h3 {
+    font-size: 44px;
+}
+
+#bannertext h2 {
+    font-size: 20px;
+}
+
+#bannercontent,
+#bannertext {
+    display: inline-block;
+    width: 100%;
+}
+
+#bannercontent {
+    height: 424px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between; /* 여백을 최대한 벌려줍니다 */
+    gap: 8px; /* 각 버튼 사이의 간격을 조정합니다 */
+    width: fit-content; /* 버튼들이 필요한 공간만큼만 차지하도록 설정합니다 */
+    padding: 0 10%;
+}
+
+/* 미디어 쿼리 추가 */
+@media screen and (max-width: 800px) {
+    .buttons {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.buttonframe {
+    font-size: 20px;
+    font-weight: 300;
+    color: #739deb;
+    line-height: 1.3em;
+    border: 1px solid #739deb; /* 테두리 색상 설정 */
+    border-radius: 40px; /* 둥근 테두리 설정 */
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    height: min-content;
+    width: fit-content;
+    transition: all 0.3s ease; /* 변경된 부분 - 전체 속성에 대한 변화를 0.3초 동안 자연스럽게 적용 */
+    transform-origin: left;
+}
+
+.buttonframe:hover {
+    color: #ffffff;
+    background: linear-gradient(130deg, #7883e3 40.92%, #9708cc 156.64%);
+    transform: scale(1.05); /* 변경된 부분 - 버튼이 1.05배로 확대되는 효과 */
+    border-color: #7883e3; /* 변경된 부분 - 호버될 때 테두리 색상 변경 */
+}
+
+.buttonframe::after {
+    content: attr(data-hover-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.buttonframe:hover::after {
+    opacity: 1;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 8px 20px;
+}
+
+.normal-text {
+    display: block; /* 기본적으로 표시 */
+}
+
+.hover-message {
+    display: none; /* 호버할 때 숨김 */
+}
+
+.buttonframe:hover .normal-text {
+    display: none; /* 호버되었을 때 normal-text 숨김 */
+}
+
+.buttonframe:hover .hover-message {
+    display: block; /* 호버되었을 때 hover-message 표시 */
+}
+
+#spline-viewer {
+    width: 100%;
+    background-color: hsla(0, 0, 60%, 0); /* HSLA 색상값 설정 */
+}
+
+/* introduction */
+
+.introduction {
+    background: #bdbdbd;
+    color: #828282;
+    padding: 2em 10%;
+    text-align: left;
+}
+
+/* Selected Work */
+
+/*Styles for Work Section*/
+
+.work {
+    background-color: #fff;
+    padding: 4em 10% 6em 10%;
+}
+
+/* 미디어 쿼리 추가 */
+@media screen and (max-width: 700px) {
+    .work {
+        padding: 2em 5%;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/*Grid Layout for Container*/
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 2em; /* Gap between image boxes */
+    grid-row-gap: 4em;
+}
+
+/*Image Box Styles*/
+.workbox {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.workbox .image {
+    width: 100%;
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.workbox img {
+    width: 100%;
+    border-radius: 8px; /* Optional: rounded corners for images */
+    object-fit: cover; /* Maintain image aspect ratio and fill container */
+}
+
+.image img:hover {
+    opacity: 0.7; /* 이미지가 70% 불투명하게 변합니다. */
+    transition: opacity 0.3s ease; /* 투명도 변화에 애니메이션 효과를 추가합니다. */
+}
+
+/*Text Overlay Styles*/
+
+.image .text {
+    position: absolute;
+    bottom: 1.5em;
+    left: 0.5em;
+    color: #000000;
+}
+
+.workbox .text {
+    padding: 0 0;
+    position: relative;
+    display: inline-block;
+    vertical-align: top; /* Vertical alignment */
+}
+
+/* Password */
+
+.title-wrapper h2 a.pagelink {
+    position: relative;
+    text-decoration: none;
+    color: #333; /* 기본 텍스트 색상 */
+    transition: color 0.3s ease; /* 색상 변경 트랜지션 */
+}
+
+/* Gradation color hover */
+/*
+
+.title-wrapper h2 a.pagelink:hover {
+
+    background: linear-gradient(340deg, #43CBFF 10.92%, #9708CC 126.64%);
+    background-clip: text;
+-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}  
+
+*/
+
+#imageClick,
+.title-wrapper {
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+}
+
+.close-btn {
+    float: right;
+    cursor: pointer;
+}
+
+/*Text Styling*/
+.text h1 {
+    font-size: 12px;
+    color: #828282;
+    font-weight: 100;
+}
+
+.text h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.text p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Product Section */
+
+@keyframes slide {
+    0% {
+        background-position: 0 0; /* 시작 위치 */
+    }
+    100% {
+        background-position: 100% 0; /* 끝나는 위치 */
+    }
+}
+
+.industrial {
+    background-color: #fff;
+    padding: 3em 0 1em 0;
+    background-image: url("image/home/BG/pawel-czerwinski-Nho-1hXd3d4-unsplash.jpg");
+    /* 배경 크기 설정 */
+    background-size: 110%;
+    /* 또는 contain 등으로 이미지 크기 조절 가능 */
+    /* 배경이미지 위치 설정 */
+    /*   background-position: center; /* 원하는 위치로 조절 가능 */
+    animation: slide 20s linear infinite; /* 20초 간격으로 반복되는 slide 애니메이션 적용 */
+}
+
+#title,
+#title2 {
+    text-align: left;
+    padding: 0 10%;
+    font-size: 24px;
+}
+
+#title2 {
+    color: #fff;
+}
+
+.container2 {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 10% 4em 10%;
+    column-gap: 20px;
+}
+
+.productbox {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+
+.productbox img {
+    height: 100%;
+    width: 100%; /* 이미지가 컨테이너에 꽉 차도록 */
+    border-radius: 8px; /* 선택적으로 이미지에 라운드 처리 추가 */
+    object-fit: cover; /* 이미지 비율 유지하면서 컨테이너에 맞추기 */
+    overflow: hidden; /* 넘치는 부분 감추기 */
+    min-height: 320px;
+    max-height: 320px;
+}
+
+.productbox .image {
+    height: inherit;
+}
+
+.productbox text {
+    position: absolute;
+    bottom: 0; /* 이미지 박스의 하단 여백 */
+    left: 0;
+    color: #000;
+}
+
+/* 미디어 쿼리 추가 */
+@media screen and (max-width: 800px) {
+    /* 예시로 768px을 기준으로 설정했습니다. 필요에 따라 조절하세요. */
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: 24px; /* column 방향의 간격을 지정합니다. */
+        padding: 2em 5%;
+        justify-content: center;
+    }
+
+    .productbox {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
+
+/* 제목과 설명의 스타일을 원하는 대로 설정하세요 */
+
+.text2 h1 {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 100;
+}
+.text2 h2 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.title-wrapper {
+    display: flex;
+    align-items: center; /* 아이콘과 텍스트 수직 정렬 */
+}
+
+.title-wrapper svg {
+    width: 16px;
+    height: 16px;
+    margin-left: 0.2em; /* 아이콘과 텍스트 사이의 간격 */
+}
+
+.text2 p {
+    color: #fff;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Fun Section */
+
+.fun {
+    background-color: #fff;
+    padding: 3em 0 1em 0;
+    background-image: url("image/home/BG/pawel-czerwinski-OG44d93iNJk-unsplash.jpg");
+    /* 배경 크기 설정 */
+    background-size: 110%;
+    /* 또는 contain 등으로 이미지 크기 조절 가능 */
+    /* 배경이미지 위치 설정 */
+    /*   background-position: center; /* 원하는 위치로 조절 가능 */
+    animation: slide 20s linear infinite; /* 20초 간격으로 반복되는 slide 애니메이션 적용 */
+}
+
+.container3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 10% 10em 10%;
+    column-gap: 20px;
+}
+
+.funbox {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 300px;
+    width: 600px;
+}
+
+.fun img {
+    height: 100%;
+    width: 100%; /* 이미지가 컨테이너에 꽉 차도록 */
+    border-radius: 8px; /* 선택적으로 이미지에 라운드 처리 추가 */
+}
+
+.fun text {
+    position: absolute;
+
+    left: 0;
+    bottom: 0; /* 이미지 박스의 하단 여백 */
+}
+
+/* about */
+
+.about {
+    background-color: #ffffff;
+    padding: 3em 0 3em 0;
+}
+
+.container4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 4em; /* Gap between image boxes */
+    grid-row-gap: 1em;
+    padding: 1em 10% 4em 10%;
+}
+
+/* 미디어 쿼리 추가 */
+@media screen and (max-width: 900px) {
+    /* 예시로 768px을 기준으로 설정했습니다. 필요에 따라 조절하세요. */
+    .container4 {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0 5%;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+    }
+    #title,
+    #title2 {
+        padding: 0 5%;
+    }
+}
+
+/*Image Box Styles*/
+
+/*
+.profilebox {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column
+} */
+
+.profilebox {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    overflow: hidden;
+    flex: 1 1 45%;
+}
+
+.profilebox img {
+    height: 100%;
+    width: 100%; /* 이미지가 컨테이너에 꽉 차도록 */
+    border-radius: 8px; /* 선택적으로 이미지에 라운드 처리 추가 */
+    object-fit: cover; /* 이미지 비율 유지하면서 컨테이너에 맞추기 */
+    overflow: hidden; /* 넘치는 부분 감추기 */
+}
+
+.profilebox .image {
+    height: inherit;
+}
+
+.image-slider img {
+    display: none; /* 이미지 숨기기 */
+}
+
+.image-slider img.active {
+    display: block; /* active 클래스가 있는 이미지만 보이기 */
+    width: 80%; /* 이미지 너비 조정 */
+    height: 460px; /* 이미지 높이 자동 조정 */
+}
+
+/* 미디어 쿼리 추가 */
+@media screen and (max-width: 1100px) {
+    /* 예시로 768px을 기준으로 설정했습니다. 필요에 따라 조절하세요. */
+    .image-slider img.active {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2em; /* column 방향의 간격을 지정합니다. */
+        padding: 0 0;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+    }
+}
+
+.emailbutton {
+    align-items: flex-end;
+    margin-bottom: 1em;
+    position: relative; /* .footer-text의 위치를 조정하기 위해 */
+}
+
+.email-button {
+    font-size: 20px;
+    font-weight: 300;
+    color: #739deb;
+    line-height: 1.3em;
+    border: 1px solid #739deb; /* 테두리 색상 설정 */
+    border-radius: 40px; /* 둥근 테두리 설정 */
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    height: min-content;
+    width: fit-content;
+    transition: all 0.3s ease; /* 변경된 부분 - 전체 속성에 대한 변화를 0.3초 동안 자연스럽게 적용 */
+    transform-origin: left;
+}
+
+.email-button:hover {
+    background: linear-gradient(240deg, #9708cc 10.92%, #43cbff 126.64%);
+    transform: scale(1.05); /* 변경된 부분 - 버튼이 1.05배로 확대되는 효과 */
+    color: #ffffff;
+    border: transparent;
+}
+
+.email-button::after {
+    content: attr(data-hover-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.email-button:hover::after {
+    opacity: 1;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 8px 20px;
+}
+
+.email-button:hover .normal-text {
+    display: none; /* 호버되었을 때 normal-text 숨김 */
+}
+
+.email-button:hover .hover-message {
+    display: block; /* 호버되었을 때 hover-message 표시 */
+}
+
+@keyframes dissolve {
+    0% {
+        opacity: 1; /* 애니메이션이 시작될 때의 투명도 */
+    }
+    100% {
+        opacity: 0; /* 애니메이션이 종료될 때의 투명도 */
+    }
+}
+
+.footer {
+    position: relative;
+    display: flex; /* Flex 컨테이너로 변경 */
+    justify-content: center; /* 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    padding: 2em; /* 간단히 통합 */
+    background-color: #e0e0e0;
+}
