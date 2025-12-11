@@ -389,31 +389,52 @@
         </div>
         <!-- footer end-->
 
-        <script>
-            const sliders = document.querySelectorAll(".slider");
+    <script>
+  const sliders = document.querySelectorAll(".slider");
 
-            sliders.forEach((slider) => {
-                const slides = slider.querySelector(".slides");
-                const images = slider.querySelectorAll(".slides img");
-                const prevBtn = slider.querySelector(".prev");
-                const nextBtn = slider.querySelector(".next");
-                let index = 0;
+  sliders.forEach((slider) => {
+    const slides = slider.querySelector(".slides");
+    const images = Array.from(slides.querySelectorAll("img"));
+    const prevBtn = slider.querySelector(".prev");
+    const nextBtn = slider.querySelector(".next");
 
-                prevBtn.addEventListener("click", () => {
-                    index = index <= 0 ? images.length - 1 : index - 1;
-                    updateSlider();
-                });
+    let index = 0;
+    let positions = [];
 
-                nextBtn.addEventListener("click", () => {
-                    index = index >= images.length - 1 ? 0 : index + 1;
-                    updateSlider();
-                });
+    // 각 이미지의 X 위치 계산
+    function calculatePositions() {
+      positions = images.map((img) => img.offsetLeft);
+    }
 
-                function updateSlider() {
-                    const sliderWidth = slider.clientWidth;
-                    slides.style.transform = `translateX(-${index * sliderWidth}px)`;
-                }
-            });
-        </script>
+    function updateSlider() {
+      // index에 해당하는 이미지의 x 위치만큼 이동
+      const x = positions[index] || 0;
+      slides.style.transform = `translateX(-${x}px)`;
+    }
+
+    // 이미지가 다 로드된 후 위치 계산
+    window.addEventListener("load", () => {
+      calculatePositions();
+      updateSlider();
+    });
+
+    // 창 크기 바뀌면 위치 다시 계산
+    window.addEventListener("resize", () => {
+      calculatePositions();
+      updateSlider();
+    });
+
+    nextBtn.addEventListener("click", () => {
+      index = (index + 1) % images.length; // 마지막 → 첫 번째
+      updateSlider();
+    });
+
+    prevBtn.addEventListener("click", () => {
+      index = (index - 1 + images.length) % images.length; // 첫 번째 → 마지막
+      updateSlider();
+    });
+  });
+</script>
+
     </body>
 </html>
