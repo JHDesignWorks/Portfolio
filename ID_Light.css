@@ -507,27 +507,29 @@ ul li:before {
 /* slide css*/
 
 .slider {
-    position: relative;
-    width: 100%; /* 화면 가로 꽉 채움 */
-    max-width: 100%; /* 뷰포트 넘지 않게 */
-    margin: auto;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;          /* 👈 슬라이더 높이 고정 */
+  margin: auto;
+  overflow: hidden;
 }
 
 .slides {
-    display: flex;
-    transition: transform 0.4s ease;
-   
+  display: flex;
+  height: 100%;           /* 👈 슬라이더 높이를 그대로 가져옴 */
+  transition: transform 0.4s ease;
 }
 
 .slides img {
-    flex: 0 0 100%; 
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: contain;  /* 👉 fill mode (이미지를 꽉 채움) */
-    border-radius: 0;
-}
+  flex: 0 0 100%;
+  width: 100%;
+  height: 520;           /* 👈 항상  프레임 꽉 채움 */
+  display: block;
+  object-fit: cover;      /* 프레임 꽉 채우되, 조금 잘릴 수 있음 */
+  border-radius: 0;
+}/* slide css*/
+
+
 
 /* 버튼 */
 .prev,
