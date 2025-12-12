@@ -509,7 +509,7 @@ ul li:before {
 .slider {
   position: relative;
   width: 100%;
-  height: 520px;          /* 👈 슬라이더 높이 고정 */
+  height: 100%;          /* 👈 슬라이더 높이 고정 */
   margin: auto;
   overflow: hidden;
 }
