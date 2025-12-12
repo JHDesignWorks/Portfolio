@@ -647,23 +647,23 @@
                 <div class="workbox" id="box1" title="Click to check!">
                     <!-- password-->
 
-                    <div class="image"><a href="case-study-rna.html">
+                    <div class="image" onclick="showPrivateNotice()">
                         <img
                             src="image/home/work/RNA_WM_Blue.jpg"
                             alt=""
                             id="imageClick"
-                             /></a>
+                             />
                     </div>
 
                     <div class="text">
                         <div class="title-wrapper" id="imageClick2" >
                             <h2 class="subtitle2">
-                               <a href="case-study-rna.html" style="color: #222;">R3S Workflow Manager
+                               R3S Workflow Manager
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                         <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                                         <path
                                             d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z" /></svg
-                                ></a>
+                                >
                             </h2>
                         </div>
                         <h1>UI/UX, Branding</h1>
@@ -672,7 +672,7 @@
                 </div>
 
                 <div class="workbox" id="box3" title="Click to check!">
-                    <div class="image">
+                    <div class="image" >
                         <a href="RNA.html"> <img src="image/home/work/RNA2.jpg" alt="visual" /></a>
                     </div>
                     <div class="text">
@@ -719,14 +719,12 @@
             }, intervalTime);
         </script>
 
-        <!-- 패스워드 입력 폼 -->
-        <div id="passwordModal" class="modal" style="display: none">
-            <div class="modal-content">
-                <span class="close-btn" onclick="closeModal()">&times;</span>
-                <input type="password" id="passwordInput" placeholder="Enter Password" />
-                <button onclick="validatePassword()">Submit</button>
-            </div>
-        </div>
+      <script>
+  function showPrivateNotice() {
+    alert("This case study is available upon request.");
+  }
+</script>
+
 
      <section id="private-section">
   ...
