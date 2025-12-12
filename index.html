@@ -475,50 +475,9 @@
    </div>
   </div>
 
-  <script>
-   (function () {
-    "use strict"; // 엄격 모드 활성화
-
-    window.showPasswordModal = function () {
-     let modal = document.getElementById("passwordModal");
-     modal.style.display = "block";
-    };
-
-    window.closeModal = function () {
-     let modal = document.getElementById("passwordModal");
-     modal.style.display = "none";
-    };
-
-    function validatePassword() {
-     let password = document.getElementById("passwordInput").value;
-     // 여기에 비밀번호를 설정합니다.
-     let correctPassword = "5202";
-
-     if (password === correctPassword) {
-      window.location.href = "WM.html";
-      return true;
-     } else {
-      alert("Incorrect password. Please try again.");
-      return false;
-     }
-    }
-   })();
-
-   function validatePassword() {
-    let password = document.getElementById("passwordInput").value;
-    // 여기에 비밀번호를 설정합니다.
-    let correctPassword = "5202";
-
-    if (password === correctPassword) {
-     console.log("Correct password. Redirecting to WM.html...");
-     window.location.href = "WM.html";
-     return true;
-    } else {
-     console.log("Incorrect password entered.");
-     alert("Incorrect password. Please try again.");
-     return false;
-    }
-   }
-  </script>
+<section id="private-section">
+  ...
+</section>
+  
  </body>
 </html>
