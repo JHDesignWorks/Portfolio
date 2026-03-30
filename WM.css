@@ -155,6 +155,10 @@ a {
 
 /*Styles for Work Section*/
 
+ .youtube-frame {
+    border: none;
+  }
+
 /*slider*/
 
 .slider-container {
@@ -349,6 +353,24 @@ a {
 .image img:hover {
     opacity: 0.7; /* 이미지가 70% 불투명하게 변합니다. */
     transition: opacity 0.3s ease; /* 투명도 변화에 애니메이션 효과를 추가합니다. */
+}
+
+
+/* video */
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 비율 */
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 /* footer */
