@@ -54,6 +54,10 @@ a {
     align-items: center;
 }
 
+.social-icon {
+  margin-right: -1em; /* 기존 값보다 작게 조정 */
+}
+
 /* Right-aligned ul */
 .header ul {
     margin: 0; /* Reset margin */
